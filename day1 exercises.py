@@ -48,16 +48,37 @@
 
 
 
-mark = int(input("Please enter the mark: "))
+# mark = int(input("Please enter the mark: "))
 
-if mark > 100 or mark < 1:
-    print("Invalid mark, please try again")
-else:
-    if mark > 70:
-        print("Distinction")
-    elif mark > 60:
-        print("Merit")
-    elif mark >= 50:
-        print("pass")
-    else:
-        print("Fail!")
+# if mark > 100 or mark < 1:
+#     print("Invalid mark, please try again")
+# else:
+#     if mark > 70:
+#         print("Distinction")
+#     elif mark > 60:
+#         print("Merit")
+#     elif mark >= 50:
+#         print("pass")
+#     else:
+#         print("Fail!")
+ 
+
+
+
+control = input("Find the length of A, given B and C: 1\nFind the length of B, given A and C: 2\nFind the length of C, given A and B: 3\nOption: ")
+
+if control == "1":
+    num1 = float(input("Please enter the length of side B: "))
+    num2 = float(input("Please enter the length of side C: "))
+    res = ((num2**2) - (num1**2)) ** 0.5
+    print(res)
+elif control == "2":
+    num1 = float(input("Please enter the length of side A: "))
+    num2 = float(input("Please enter the length of side C: "))
+    res = ((num2**2) - (num1**2)) ** 0.5
+    print(res)
+elif control == "3":
+    num1 = float(input("Please enter the length of side A: "))
+    num2 = float(input("Please enter the length of side B: "))
+    res = ((num1**2) + (num2**2)) ** 0.5
+    print(res)
